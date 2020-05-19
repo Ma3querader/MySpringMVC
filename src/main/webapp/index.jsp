@@ -21,6 +21,13 @@
 
 <a href="/model/testForwardOrRedirect">testForwardOrRedirect</a><br/>
 
+<form action="upload/fileupload1" method="post" enctype="multipart/form-data">
+    姓名<input type="text" name="username">
+    浏览文件<input type="file" name="upload"/><br/>
+    <input type="submit" value="上传"/>
+</form>
+
+
 
 </body>
 </html>
