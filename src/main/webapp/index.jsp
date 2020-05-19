@@ -15,9 +15,11 @@
     <%--<input type="submit" value="提交">--%>
 <%--</form>--%>
 
-<a href="param/testSessionAttributes">testSessionAttributes</a><br/>
-<a href="param/getSessionAttributes">getSessionAttributes</a><br/>
-<a href="param/delSessionAttributes">delSessionAttributes</a><br/>
+<a href="model/testModel">model</a><br/>
+<a href="/model/testJsp">jsp</a><br/>
+<a href="/model/testModelAndView">mv</a><br/>
+
+<a href="/model/testForwardOrRedirect">testForwardOrRedirect</a><br/>
 
 
 </body>
