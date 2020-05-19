@@ -19,7 +19,16 @@
         <property name="suffix" value=".jsp" />
     </bean>
 
+    <!--配置自定义格式转换器-->
+    <bean id="conversionServiceFactoryBean" class="org.springframework.context.support.ConversionServiceFactoryBean">
+        <property name="converters" ref="stringToDateConverter"></property>
+    </bean>
+
+    <bean id="stringToDateConverter" class="com.lakers.utils.StringToDateConverter"></bean>
+
+
+
     <!--springmvc注解支持-->
-    <mvc:annotation-driven />
+    <mvc:annotation-driven conversion-service="conversionServiceFactoryBean"/>
 
 </beans>

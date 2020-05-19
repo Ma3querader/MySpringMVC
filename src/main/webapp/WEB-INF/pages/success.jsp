@@ -5,5 +5,6 @@
 </head>
 <body>
     <h1>fuck the world</h1>
+    <h1>${sessionScope.msg}</h1>
 </body>
 </html>
