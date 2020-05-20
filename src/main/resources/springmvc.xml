@@ -26,6 +26,16 @@
 
     <bean id="stringToDateConverter" class="com.lakers.utils.StringToDateConverter"></bean>
 
+    <!--异常处理器-->
+    <bean id="sysExceptionResolver" class="com.lakers.controller.SysExceptionResolver"></bean>
+
+    <!--配置拦截器-->
+    <mvc:interceptors>
+        <mvc:interceptor>
+            <mvc:mapping path="/**"></mvc:mapping>
+            <bean class="com.lakers.Intercepter.MyIntercepter1"></bean>
+        </mvc:interceptor>
+    </mvc:interceptors>
 
 
     <!--springmvc注解支持-->

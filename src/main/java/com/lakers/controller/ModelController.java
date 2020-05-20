@@ -23,10 +23,12 @@ public class ModelController {
 
     @RequestMapping("/testModel")
     public String testModel(Model model){
+        System.out.println("进入control层");
         Account account = new Account();
         account.setUsername("通天塔");
         account.setPassword("jiji");
         model.addAttribute(account);
+//        int i = 1/0;
         return "success";
     }
 
